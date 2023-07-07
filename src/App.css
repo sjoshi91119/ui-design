@@ -19,7 +19,7 @@ body {
   padding: 30px;
   border-radius: 25px;
   background-color: rgb(247, 206, 213);
-  opacity: 0.6;
+  opacity: 0.7;
   border: 3px solid white;
   box-shadow: inset 0px 0px 10px 6px white;
 }
@@ -64,6 +64,7 @@ body {
   border-radius: 15px;
   justify-content: left;
   align-items: left;
+  box-shadow: inset 0px 0px 5px 3px white;
 }
 .container {
   margin-top: 10px;
@@ -74,24 +75,43 @@ body {
 }
 select {
   border-radius: 5px;
+  background-color: rgb(133, 130, 130);
 }
 .rounded {
   height: 35px;
   width: 35px;
-  margin: 0 auto;
+  margin: 0px auto;
+  display: flex;
   border-radius: 60px;
-  background: silver;
+  background: rgb(248, 150, 248);
+  box-shadow: inset 0px 0px 5px 5px white;
   padding: 10px;
-  border: 8px solid #ddd;
-  z-index: 1;
+  border: 8px solid rgb(247, 206, 213);
   position: relative;
+  justify-content: center;
+  font-size: 28px;
 }
 
 .digged {
   margin: 0px;
-  background: silver;
+  background: rgb(241, 187, 196);
+  box-shadow: inset 0px 0px 5px 5px white;
+  opacity: 1;
   width: 100%;
   height: 80%;
   margin-top: -30px;
+  margin-left: -5px;
   border-radius: 20px;
+  font-size: 20px;
 }
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 40px;
+  margin-top: -35px;
+  padding: 15px 0px;
+}
+
+/* // idk just commiting to not break the streak  */

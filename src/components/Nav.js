@@ -5,7 +5,12 @@ import { faBed } from "@fortawesome/free-solid-svg-icons";
 import { faKitchenSet } from "@fortawesome/free-solid-svg-icons";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { faUtensils } from "@fortawesome/free-solid-svg-icons";
-
+import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faPlug } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import Header from "./Header";
 function Nav() {
   return (
     <>
@@ -14,10 +19,7 @@ function Nav() {
         <FontAwesomeIcon icon={faCircleUser} />
       </div>
 
-      <div className="header">
-        <p id="greeting">Good Morning!</p>
-        <p id="time">08:24</p> <br></br>
-      </div>
+      <Header />
 
       <div className="mid">
         <h3>Room</h3>
@@ -67,12 +69,18 @@ function Nav() {
         </div>
 
         <div class="container">
-          <div class="rounded">bla bla bla</div>
+          <div class="rounded">
+            <FontAwesomeIcon icon={faMicrophone} />
+          </div>
           <div class="digged">
-            {" "}
             <br />
             <br />
-            or yada yada yada{" "}
+            <div class="logos">
+              <FontAwesomeIcon icon={faHouse} />
+              <FontAwesomeIcon icon={faCalendarDays} />
+              <FontAwesomeIcon icon={faPlug} />
+              <FontAwesomeIcon icon={faUser} />
+            </div>
           </div>
         </div>
       </div>
@@ -80,3 +88,4 @@ function Nav() {
   );
 }
 export default Nav;
+// idk just commiting to not break the streak
